@@ -1,0 +1,305 @@
+
+
+.project-info-container {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 2rem;
+  transition: background-color 0.3s ease;
+}
+
+/* Theme backgrounds - matching HomePage */
+.project-info-container.theme-blue {
+  background: linear-gradient(135deg, #eff6ff 0%, #dbeafe 100%);
+}
+
+.project-info-container.theme-green {
+  background: linear-gradient(135deg, #f0fdf4 0%, #dcfce7 100%);
+}
+
+.project-info-container.theme-purple {
+  background: linear-gradient(135deg, #faf5ff 0%, #f3e8ff 100%);
+}
+
+.project-info-container.theme-red {
+  background: linear-gradient(135deg, #fef2f2 0%, #fecaca 100%);
+}
+
+/* Dark mode backgrounds */
+.project-info-container.theme-blue.dark {
+  background: linear-gradient(135deg, #1e293b 0%, #334155 100%);
+}
+
+.project-info-container.theme-green.dark {
+  background: linear-gradient(135deg, #1e293b 0%, #334155 100%);
+}
+
+.project-info-container.theme-purple.dark {
+  background: linear-gradient(135deg, #1e293b 0%, #334155 100%);
+}
+
+.project-info-container.theme-red.dark {
+  background: linear-gradient(135deg, #1e293b 0%, #334155 100%);
+}
+
+/* Card styling */
+.project-info-card {
+  background-color: white;
+  box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.25);
+  border-radius: 1rem;
+  padding: 2.5rem;
+  text-align: center;
+  width: 100%;
+  max-width: 36rem;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.project-info-card.dark {
+  background-color: #1f2937; /* gray-800 */
+  color: white;
+}
+
+/* Title styling */
+.project-title {
+  font-size: 1.875rem;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  font-weight: bold;
+  text-align: center;
+  color: #000000;
+  margin-bottom: 1rem;
+  padding-bottom: 100px;
+  transition: color 0.3s ease;
+}
+
+.project-title.theme-blue {
+  color: #1d4ed8; /* blue-700 */
+}
+
+.project-title.theme-green {
+  color: #15803d; /* green-700 */
+}
+
+.project-title.theme-purple {
+  color: #7c3aed; /* purple-700 */
+}
+
+.project-title.theme-red {
+  color: #dc2626; /* red-700 */
+}
+
+/* Dark mode title colors */
+.project-title.theme-blue.dark {
+  color: #60a5fa; /* blue-400 */
+}
+
+.project-title.theme-green.dark {
+  color: #4ade80; /* green-400 */
+}
+
+.project-title.theme-purple.dark {
+  color: #a78bfa; /* purple-400 */
+}
+
+.project-title.theme-red.dark {
+  color: #f87171; /* red-400 */
+}
+
+/* Text styling */
+.college-text {
+  color: #079dde;
+   /* gray-600 */
+   font-weight: bold;
+   text-align: center;
+  margin-bottom: 0.5rem;
+}
+
+.college-text.dark {
+  color: #d1d5db; /* gray-300 */
+}
+
+.college-name {
+  font-weight: 600;
+  font-weight: bold;
+  font-size: 2rem;
+
+  color: #1d4ed8;
+}
+
+.team-heading {
+  font-size: 1.25rem;
+  text-align: center;
+  font-weight: 600;
+  color: #30c90a; /* gray-800 */
+  margin-top: 1.5rem;
+  margin-bottom: 0.5rem;
+}
+
+.team-heading.dark {
+  color: #f3f4f6; /* gray-100 */
+}
+
+.team-list {
+  color: #374151; /* gray-700 */
+  margin-bottom: 1.5rem;
+  font-family: 'Times New Roman', Times, serif;
+  color: rgb(92, 35, 224);
+  font-size: 1.5rem;
+  text-align: center;
+  list-style: none;
+  padding: 0;
+}
+
+.team-list.dark {
+  color: #d1d5db; /* gray-300 */
+}
+
+.team-list li {
+  padding: 0.25rem 0;
+}
+
+/* Login button */
+.login-button {
+  width: 100%;
+  color: white;
+  font-weight: 600;
+  padding: 0.75rem;
+  color: white;
+  background-color: rgb(14, 209, 56);
+  border-radius: 0.5rem;
+  border: none;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.login-button:hover {
+  transform: translateY(-2px);
+}
+
+.login-button.theme-blue {
+  background-color: #2563eb; /* blue-600 */
+}
+
+.login-button.theme-blue:hover {
+  background-color: #1d4ed8; /* blue-700 */
+}
+
+.login-button.theme-green {
+  background-color: #16a34a; /* green-600 */
+}
+
+.login-button.theme-green:hover {
+  background-color: #15803d; /* green-700 */
+}
+
+.login-button.theme-purple {
+  background-color: #9333ea; /* purple-600 */
+}
+
+.login-button.theme-purple:hover {
+  background-color: #7c3aed; /* purple-700 */
+}
+
+.login-button.theme-red {
+  background-color: #dc2626; /* red-600 */
+}
+
+.login-button.theme-red:hover {
+  background-color: #b91c1c; /* red-700 */
+}
+
+/* Theme selector (if you want to add it) */
+.theme-selector {
+  position: fixed;
+  top: 2rem;
+  right: 2rem;
+  display: flex;
+  gap: 0.5rem;
+}
+
+.theme-toggle {
+  padding: 0.75rem;
+  border-radius: 50%;
+  border: none;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.theme-toggle.light {
+  background-color: #374151; /* gray-700 */
+  color: white;
+}
+
+.theme-toggle.light:hover {
+  background-color: #4b5563; /* gray-600 */
+}
+
+.theme-toggle.dark {
+  background-color: #fbbf24; /* yellow-400 */
+  color: #1f2937; /* gray-800 */
+}
+
+.theme-toggle.dark:hover {
+  background-color: #f59e0b; /* yellow-500 */
+}
+
+.color-theme-buttons {
+  display: flex;
+  gap: 0.5rem;
+  margin-top: 0.5rem;
+}
+
+.color-button {
+  width: 2rem;
+  height: 2rem;
+  border-radius: 50%;
+  border: 2px solid white;
+  cursor: pointer;
+  transition: transform 0.2s ease;
+}
+
+.color-button:hover {
+  transform: scale(1.1);
+}
+
+.color-button.active {
+  transform: scale(1.2);
+  box-shadow: 0 0 0 3px rgba(0, 0, 0, 0.2);
+}
+
+.color-button.blue {
+  background-color: #3b82f6;
+}
+
+.color-button.green {
+  background-color: #10b981;
+}
+
+.color-button.purple {
+  background-color: #8b5cf6;
+}
+
+.color-button.red {
+  background-color: #ef4444;
+}
+
+/* Responsive design */
+@media (max-width: 640px) {
+  .project-info-container {
+    padding: 1rem;
+  }
+  
+  .project-info-card {
+    padding: 2rem;
+  }
+  
+  .project-title {
+    font-size: 1.5rem;
+  }
+  
+  .theme-selector {
+    top: 1rem;
+    right: 1rem;
+  }
+}
